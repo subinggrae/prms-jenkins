@@ -29,7 +29,7 @@ pipeline {
     stages {
         stage('git scm update') {
             steps {
-                check scm
+                checkout scm
             }
         }
         stage('docker build && push') {
